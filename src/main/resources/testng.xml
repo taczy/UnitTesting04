@@ -1,0 +1,94 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CalcTestSuite" verbose="1">
+    <groups>
+        <run>
+            <exclude name = "positive"></exclude>
+        </run>
+    </groups>
+
+    <test name="SumLongTest">
+        <parameter name="a" value="102"/>
+        <parameter name="b" value="80"/>
+        <parameter name="expected" value="182"/>
+        <classes>
+            <class name="com.epam.atm.module4.testng.SumLongTest"></class>
+        </classes>
+    </test>
+
+    <test name="SumDoubleTest">
+        <parameter name="a" value="0.001"/>
+        <parameter name="b" value="0.2"/>
+        <parameter name="expected" value="0.201"/>
+        <classes>
+            <class name="com.epam.atm.module4.testng.SumDoubleTest"></class>
+        </classes>
+    </test>
+
+    <test name="SubLongTest">
+        <classes>
+            <class name="com.epam.atm.module4.testng.SubLongTest"></class>
+        </classes>
+    </test>
+
+    <test name="SubDoubleTest">
+        <parameter name="a" value="1.999"/>
+        <parameter name="b" value="0.88"/>
+        <parameter name="expected" value="1.119"/>
+        <classes>
+            <class name="com.epam.atm.module4.testng.SubDoubleTest"></class>
+        </classes>
+    </test>
+
+    <test name="PowTest">
+        <parameter name="a" value="3"/>
+        <parameter name="b" value="2"/>
+        <parameter name="expected" value="9"/>
+        <classes>
+            <class name="com.epam.atm.module4.testng.PowTest"></class>
+        </classes>
+    </test>
+
+    <test name="SqrtTest">
+        <parameter name="a" value="16"/>
+        <parameter name="expected" value="4"/>
+        <classes>
+            <class name="com.epam.atm.module4.testng.SqrtTest"></class>
+        </classes>
+    </test>
+
+    <test name="TgTest">
+        <classes>
+            <class name="com.epam.atm.module4.testng.TgTest"></class>
+        </classes>
+    </test>
+
+    <test name="CtgTest">
+        <classes>
+            <class name="com.epam.atm.module4.testng.CtgTest"></class>
+        </classes>
+    </test>
+
+    <test name="CosTest">
+        <classes>
+            <class name="com.epam.atm.module4.testng.CosTest"></class>
+        </classes>
+    </test>
+
+    <test name="SinTest">
+        <classes>
+            <class name="com.epam.atm.module4.testng.SinTest"></class>
+        </classes>
+    </test>
+
+    <test name="IsPositiveTest">
+        <classes>
+            <class name="com.epam.atm.module4.testng.IsPositiveTest"></class>
+        </classes>
+    </test>
+
+    <test name="IsNegativeTest">
+        <classes>
+            <class name="com.epam.atm.module4.testng.IsNegativeTest"></class>
+        </classes>
+    </test>
+</suite>
